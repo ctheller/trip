@@ -1,5 +1,5 @@
 var Sequelize = require('sequelize');
 var db = new Sequelize('postgres://localhost/tripplanner', {
-		logging: true});
+		logging: false});
 
-module.exports = db;
+module.exports = db
