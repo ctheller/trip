@@ -1,0 +1,69 @@
+@import "normalize";
+
+
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+@mixin clearfix {
+	&:after {
+		content: '';
+		display: table;
+		clear: both; 
+	}
+}
+
+.navbar{
+	background-color: #dddddd;
+	padding: 0;
+	margin: 0;
+}
+
+.container {
+		background-color: #eeeeee;
+		.menus {
+			padding: 25px;
+		}
+	}
+
+.content {
+	@include clearfix;
+	width: 100%;
+	padding: 0;
+	label {
+		display: block;
+		padding-top: 15px;
+	}
+}
+
+$grid-width : 100%;
+$gutter-width: 12%;
+
+@for $i from 1 through 12 {
+	.col-lg-#{$i} {
+		float: left;
+		width: ($i/12) * $grid-width;
+		padding: 0;
+	}
+}
+
+
+@media screen and (max-width: 600px) {
+	@for $i from 1 through 12 {
+		.col-sm-#{$i} {
+			float: left;
+			width: ($i/12) * $grid-width;
+			padding: 0;
+		}
+	}
+}
+
+@media screen and (min-width: 600px) and (max-width: 980px) {
+	@for $i from 1 through 12 {
+		.col-md-#{$i} {
+			float: left;
+			width: ($i/12) * $grid-width;
+			padding: 0;
+		}
+	}
+}

@@ -12,9 +12,10 @@ app.use(morgan('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
+app.use(express.static(path.join(__dirname, 'public')));
 app.use('/bootstrap', express.static(path.join(__dirname, '/node_modules/bootstrap/dist')));
 app.use('/jquery', express.static(path.join(__dirname, '/node_modules/jquery/dist')));
-app.use(express.static('public'));
+
 
 
 // point res.render to the proper directory
@@ -31,12 +32,12 @@ swig.setDefaults({cache: false});
 app.use('/', routes);
 
 
-// catch 404 (i.e., no route was hit) and forward to error handler
-app.use(function(req, res, next) {
-  var err = new Error('Not Found');
-  err.status = 404;
-  next(err);
-});
+// // catch 404 (i.e., no route was hit) and forward to error handler
+// app.use(function(req, res, next) {
+//   var err = new Error('Not Found');
+//   err.status = 404;
+//   next(err);
+// });
 
 // handle all errors (anything passed into `next()`)
 app.use(function(err, req, res, next) {
