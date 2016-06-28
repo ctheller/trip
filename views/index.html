@@ -13,21 +13,21 @@
 					{% for hotel in hotels %}
 				  <option value={{hotel.name}}>{{hotel.name}}</option>
 				  	{% endfor %} 
-				</select>
+				</select><span><button class="btn-primary">+</button></span>
 
 				<label>Restaurants</label>
 				<select class="form-control" name="Restaurants">
 					{% for restaurant in restaurants %}
 				  <option value={{restaurant.name}}>{{restaurant.name}}</option>
 				  {% endfor %} 
-				</select>
+				</select><span><button class="btn-primary">+</button></span>
 
 				<label>Activities</label>
 				<select class="form-control" name="Activities">
 					{% for activity in activities %}
 				  <option value={{activity.name}}>{{activity.name}}</option>
 				  {% endfor %} 
-				</select>
+				</select><span><button class="btn-primary">+</button></span>
 			</div>
 		</div>
 		<div class="contain">
@@ -40,15 +40,15 @@
 			</ul>
 			<div id="day">
 				<label>My Hotel</label>
-				<p>The Ritz Carlton New York, Battery Park</p>
+				<p>The Ritz Carlton New York, Battery Park  &nbsp&nbsp&nbsp&nbsp <span><button class="btn-danger">-</button></span></p>
 				<label>My Restaurants</label>
-				<p>Mas Farmhouse</p>
-				<p>Pylos</p>
-				<p>Bouley</p>
+				<p>Mas Farmhouse  &nbsp&nbsp&nbsp&nbsp <span><button class="btn-danger">-</button></span></p>
+				<p>Pylos  &nbsp&nbsp&nbsp&nbsp <span><button class="btn-danger">-</button></span></p>
+				<p>Bouley  &nbsp&nbsp&nbsp&nbsp <span><button class="btn-danger">-</button></span></p>
 				<label>My Activities</label>
-				<p>Ground Zero</p>
-				<p>Blue Man Group</p>
-				<p>Apple Store</p>
+				<p>Ground Zero  &nbsp&nbsp&nbsp&nbsp <span><button class="btn-danger">-</button></span></p>
+				<p>Blue Man Group  &nbsp&nbsp&nbsp&nbsp <span><button class="btn-danger">-</button></span></p>
+				<p>Apple Store  &nbsp&nbsp&nbsp&nbsp <span><button class="btn-danger">-</button></span></p>
 			</div>
 		</div>
 	</div>

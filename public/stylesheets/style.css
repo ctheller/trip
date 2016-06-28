@@ -359,7 +359,9 @@ body {
   border-radius: 10px; }
 
 .form-control {
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+  width: 85%;
+  display: inline; }
 
 .nav-pills {
   position: relative;
@@ -412,6 +414,17 @@ body {
     text-align: center;
     top: 15px; } }
 
+span > .btn-danger {
+  border-radius: 50%;
+  border: 1px;
+  padding: 1px 6px 2px 6px; }
+
+.btn-primary {
+  border-radius: 50%;
+  border: 1px;
+  margin-left: 10px;
+  padding: 1px 6px 2px 6px; }
+
 #day {
   background-color: RGBa(0, 0, 0, 0.3);
   height: 400px;
@@ -428,10 +441,10 @@ label {
   border: 1px none;
   border-radius: 50%;
   background-color: rgba(0, 255, 125, 0.6); }
-  .nav-pills > li.active > a :hover, .nav-pills > li.active > a :focus {
-    border: 1px none;
-    border-radius: 50%;
-    background-color: rgba(0, 255, 125, 0.6); }
+
+.nav-pills > li.active > a:focus, .nav-pills > li.active > a:hover {
+  color: rgba(0, 255, 125, 0.6);
+  background-color: white; }
 
 .content {
   width: 100%;
