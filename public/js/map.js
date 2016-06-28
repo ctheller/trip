@@ -22,14 +22,14 @@ function initialize_gmaps() {
     // Add the marker to the map by calling setMap()
     marker.setMap(map);
 
-    //Add ALL options to map
+    //Add ALL places to map
     $("option").each(function(){
         var lat = parseFloat($(this).data("location").split(",")[0]);
         var long = parseFloat($(this).data("location").split(",")[1]);
 
         var newMarker = new google.maps.Marker({
             position: new google.maps.LatLng(lat, long),
-            title: $(this).val()
+            title: $(this).text()
         });
 
         newMarker.setMap(map);
