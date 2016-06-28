@@ -18,6 +18,12 @@ body {
 	padding-top: 50px;
 }
 
+.navwrapper{
+	display: block;
+	height: 3px;
+	background: RGBa(0,0,0,.8);
+}
+
 #passport {
 	float: left;
 	height: 25px;
