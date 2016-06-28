@@ -2,10 +2,8 @@
 
 
 {% block content %}
-<div style="min-height: 650px; background-color: #aaddaa" class="col-lg-8 col-md-7 col-sm-12">
-	<div class="map">
-		<p>Map</p>
-	</div>
+<div id="map-canvas" class="col-lg-8 col-md-7 col-sm-12">
+	
 </div>
 	<div class="col-lg-4 col-md-5 col-sm-12">
 		<div class="contain">
@@ -33,12 +31,27 @@
 			</div>
 		</div>
 		<div class="contain">
-			<button class="btn btn-primary" type="button">
-		  	Day Number <span class="badge">2</span>
-			</button>
+			<ul class="nav nav-pills">
+				<h1>- Agenda -</h1>
+    			<li><a href="#">1</a></li>
+   				 <li class="active"><a href="#">2</a></li>
+    			<li><a href="#">3</a></li>
+    			<li><a href="#">+</a></li>
+			</ul>
+			<div id="day">
+				<label>My Hotel</label>
+				<p>The Ritz Carlton New York, Battery Park</p>
+				<label>My Restaurants</label>
+				<p>Mas Farmhouse</p>
+				<p>Pylos</p>
+				<p>Bouley</p>
+				<label>My Activities</label>
+				<p>Ground Zero</p>
+				<p>Blue Man Group</p>
+				<p>Apple Store</p>
+			</div>
 		</div>
 	</div>
 
 {% endblock %}
-
 

@@ -10,7 +10,7 @@ router.get('/', function(req,res,next){
 	var findingHotels = Hotel.findAll();
 	var findingRestaurants = Restaurant.findAll();
 	var findingActivities = Activity.findAll();
-	Promise.all([findingActivities,findingRestaurants,findingHotels])
+	Promise.all([findingHotels,findingRestaurants,findingActivities])
 	.spread(function(hotels, restaurants, activities){
 		res.render('index', {hotels: hotels, restaurants: restaurants, activities: activities});
 	})

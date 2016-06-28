@@ -346,7 +346,11 @@ body {
 
 #passport {
   float: left;
-  height: 25px; }
+  height: 25px;
+  margin-right: 10px; }
+
+#map-canvas {
+  height: 100vh; }
 
 .contain {
   background-color: RGBa(0, 0, 0, 0.3);
@@ -356,6 +360,78 @@ body {
 
 .form-control {
   margin-bottom: 15px; }
+
+.nav-pills {
+  position: relative;
+  background-color: RGBa(0, 0, 0, 0.4);
+  padding: 15px;
+  border-radius: 10px 10px 0px 0px; }
+  .nav-pills h1 {
+    color: #333333;
+    font-size: 3em;
+    position: absolute;
+    right: 10px;
+    top: 12px;
+    margin: auto 0; }
+  .nav-pills li {
+    border: 2px solid;
+    border-radius: 50%; }
+    .nav-pills li a {
+      color: rgba(0, 255, 125, 0.6); }
+    .nav-pills li :hover, .nav-pills li :focus, .nav-pills li :active {
+      border: 1px none;
+      border-radius: 50%;
+      background-color: rgba(0, 255, 125, 0.6); }
+
+@media screen and (max-width: 1475px) {
+  .nav-pills h1 {
+    font-size: 2.5em;
+    text-align: center;
+    top: 15px; } }
+
+@media screen and (max-width: 1375px) {
+  .nav-pills h1 {
+    font-size: 2em;
+    text-align: center;
+    top: 20px; } }
+
+@media screen and (max-width: 1275px) {
+  .nav-pills h1 {
+    font-size: 1.5em;
+    text-align: center;
+    top: 25px; } }
+
+@media screen and (max-width: 1175px) {
+  .nav-pills h1 {
+    display: none; } }
+
+@media screen and (min-width: 453px) and (max-width: 686px) {
+  .nav-pills h1 {
+    display: inline-block;
+    font-size: 2.5em;
+    text-align: center;
+    top: 15px; } }
+
+#day {
+  background-color: RGBa(0, 0, 0, 0.3);
+  height: 400px;
+  padding: 30px;
+  border-radius: 0px 0px 10px 10px; }
+  #day p {
+    color: #878787; }
+
+label {
+  font-size: 17px;
+  color: #bbbbbb; }
+
+.nav-pills > li.active > a {
+  border: 1px none;
+  border-radius: 50%;
+  background-color: rgba(0, 255, 125, 0.6); }
+  .nav-pills > li.active > a :hover, .nav-pills > li.active > a :focus {
+    border: 1px none;
+    border-radius: 50%;
+    background-color: rgba(0, 255, 125, 0.6); }
 
 .content {
   width: 100%;
@@ -434,7 +510,7 @@ button.btn.btn-primary {
   width: 100%;
   padding: 0; }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 687px) {
   .col-sm-1 {
     float: left;
     width: 8.33333%;
@@ -482,9 +558,11 @@ button.btn.btn-primary {
   .col-sm-12 {
     float: left;
     width: 100%;
-    padding: 0; } }
+    padding: 0; }
+  #map-canvas {
+    height: 50vh; } }
 
-@media screen and (min-width: 600px) and (max-width: 980px) {
+@media screen and (min-width: 687px) and (max-width: 980px) {
   .col-md-1 {
     float: left;
     width: 8.33333%;
