@@ -341,26 +341,38 @@ table {
 *, *:after, *:before {
   box-sizing: border-box; }
 
-.navbar {
-  background-color: #dddddd;
-  padding: 0;
-  margin: 0; }
+body {
+  padding-top: 50px; }
 
-.container {
-  background-color: #eeeeee; }
-  .container .menus {
-    padding: 25px; }
+#passport {
+  float: left;
+  height: 25px; }
+
+.contain {
+  background-color: RGBa(0, 0, 0, 0.3);
+  margin: 10px;
+  padding: 30px;
+  border-radius: 10px; }
+
+.form-control {
+  margin-bottom: 15px; }
 
 .content {
   width: 100%;
-  padding: 0; }
+  padding: 0;
+  background-color: #555555; }
   .content:after {
     content: '';
     display: table;
     clear: both; }
   .content label {
     display: block;
-    padding-top: 15px; }
+    color: #eeeeee;
+    padding-top: 12px; }
+
+button.btn.btn-primary {
+  display: block;
+  margin: auto; }
 
 .col-lg-1 {
   float: left;

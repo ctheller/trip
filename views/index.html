@@ -2,47 +2,43 @@
 
 
 {% block content %}
-<div style="min-height: 650px; background-color: #ddaaaa" class="col-lg-8 col-md-6 col-sm-12">
+<div style="min-height: 650px; background-color: #aaddaa" class="col-lg-8 col-md-7 col-sm-12">
 	<div class="map">
 		<p>Map</p>
 	</div>
 </div>
-	<div class="col-lg-4 col-md-6 col-sm-12">
-		<div class="container">
+	<div class="col-lg-4 col-md-5 col-sm-12">
+		<div class="contain">
 			<div class="menus">
 				<label>Hotels</label>
-				<select class="btn bg-success" name="Hotels">
+				<select class="form-control" name="Hotels">
 					{% for hotel in hotels %}
 				  <option value={{hotel.name}}>{{hotel.name}}</option>
 				  	{% endfor %} 
 				</select>
 
 				<label>Restaurants</label>
-				<select class="btn bg-success" name="Restaurants">
+				<select class="form-control" name="Restaurants">
 					{% for restaurant in restaurants %}
 				  <option value={{restaurant.name}}>{{restaurant.name}}</option>
 				  {% endfor %} 
 				</select>
 
 				<label>Activities</label>
-				<select class="btn bg-success" name="Activities">
+				<select class="form-control" name="Activities">
 					{% for activity in activities %}
 				  <option value={{activity.name}}>{{activity.name}}</option>
 				  {% endfor %} 
 				</select>
 			</div>
 		</div>
+		<div class="contain">
+			<button class="btn btn-primary" type="button">
+		  	Day Number <span class="badge">2</span>
+			</button>
+		</div>
 	</div>
-<div style="min-height: 114px; background-color: #dddaaa" class="col-lg-4 col-md-6 col-sm-12">
-	<h1>Day Number</h1>
-</div>
 
-<div style="min-height: 300px; background-color: #aadaaa" class="col-lg-4 col-md-6 col-sm-12">
-
-</div>
-
-<div>
-</div>
 {% endblock %}
 
 

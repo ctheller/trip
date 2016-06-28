@@ -13,18 +13,25 @@
 	}
 }
 
-.navbar{
-	background-color: #dddddd;
-	padding: 0;
-	margin: 0;
+body {
+	padding-top: 50px;
 }
 
-.container {
-		background-color: #eeeeee;
-		.menus {
-			padding: 25px;
-		}
+#passport {
+	float: left;
+	height: 25px;
+}
+
+.contain {
+		background-color: RGBa(0,0,0,.3);
+		margin: 10px;
+		padding: 30px;
+		border-radius: 10px;
 	}
+
+.form-control  {
+	margin-bottom: 15px;
+}
 
 .content {
 	@include clearfix;
@@ -32,8 +39,15 @@
 	padding: 0;
 	label {
 		display: block;
-		padding-top: 15px;
+		color: #eeeeee;
+		padding-top: 12px;
 	}
+	background-color: #555555;
+}
+
+button.btn.btn-primary {
+	display: block;
+	margin: auto;
 }
 
 $grid-width : 100%;
@@ -67,3 +81,5 @@ $gutter-width: 12%;
 		}
 	}
 }
+
+
