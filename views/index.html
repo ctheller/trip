@@ -11,21 +11,21 @@
 				<label>Hotels</label>
 				<select class="form-control" name="Hotels">
 					{% for hotel in hotels %}
-				  <option data-location="{{places[hotel.placeId].location}}" value={{hotel.name}}>{{hotel.name}}</option>
+				  <option data-location="{{places[hotel.placeId-1].location}}" value={{hotel.name}}>{{hotel.name}}</option>
 				  	{% endfor %} 
 				</select><span><button class="btn-primary">+</button></span>
 
 				<label>Restaurants</label>
 				<select class="form-control" name="Restaurants">
 					{% for restaurant in restaurants %}
-				  <option data-location="{{places[restaurant.placeId].location}}" value={{restaurant.name}}>{{restaurant.name}}</option>
+				  <option data-location="{{places[restaurant.placeId-1].location}}" value={{restaurant.name}}>{{restaurant.name}}</option>
 				  {% endfor %} 
 				</select><span><button class="btn-primary">+</button></span>
 
 				<label>Activities</label>
 				<select class="form-control" name="Activities">
 					{% for activity in activities %}
-				  <option data-location="{{places[activity.placeId].location}}" value={{activity.name}}>{{activity.name}}</option>
+				  <option data-location="{{places[activity.placeId-1].location}}" value={{activity.name}}>{{activity.name}}</option>
 				  {% endfor %} 
 				</select><span><button class="btn-primary">+</button></span>
 			</div>
